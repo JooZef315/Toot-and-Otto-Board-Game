@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+a {
+  display: block;
+  width: 15%;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  background-color: steelblue;
+  color: white;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+table {
+  padding: 0.5rem;
+  width: 40%;
+  border: none;
+  border-radius: 8px;
+  background-color: steelblue;
+}
+
+tbody {
+  border-radius: 5px;
+  border: 2px solid black;
+  height: 400px;
+}
+
+td {
+  border-radius: 50%;
+  border: 4px solid black;
+  background-color: white;
+  text-align: center;
+  font-size: 46px;
+  height: 100px;
+  width: 16.5%;
+}
+
+th {
+  border-radius: 50%;
+  height: 100px;
+}
+
+.active-header {
+  height: 100px;
+  border: 3px solid black;
+  font-size: 36px;
+}
+
+#reset {
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: steelblue;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: white;
+  box-shadow: 0 0 0 1.5px black;
+}
+
+#reset:hover {
+  background-color: steelblue;
+  color: black;
+}
+
+.winner {
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 10px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.player {
+  padding: 1rem;
+  text-align: center;
+  font-size: larger;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 0 2px black;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    flex-direction: column;
+  }
+  table {
+    margin: 1rem auto;
+    width: 90%;
+  }
+  a {
+    width: 60%;
+  }
+}

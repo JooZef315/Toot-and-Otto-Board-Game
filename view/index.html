@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="s.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h3>
+        Player1/red to win, has TOOT to be played, and Player2/yellow to win has
+        OTTO to be played, each player has his remaining playing set in his box
+      </h3>
+      <h3>
+        Use the mouse wheel on the table header to toggle between T and O, and
+        click to play your move!
+      </h3>
+      <h3>
+        If you selected the computer to play against, it will replace the second
+        player
+      </h3>
+      <a href="http://127.0.0.1:8887/view/dash.html">Check Our DashBoard!</a>
+    </header>
+    <div class="container">
+      <div class="player">
+        <h3>Player 1 <br />(TOOT)</h3>
+        O's remaining: <span>6</span> <br />
+        T's remaining: <span>6</span>
+      </div>
+      <table class="box">
+        <thead>
+          <tr>
+            <th class="col-1"></th>
+            <th class="col-2"></th>
+            <th class="col-3"></th>
+            <th class="col-4"></th>
+            <th class="col-5"></th>
+            <th class="col-6"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="player">
+        <h3>Player 2 <br />(OTTO)</h3>
+        O's remaining: <span>6</span> <br />
+        T's remaining: <span>6</span>
+      </div>
+    </div>
+    <div class="winner"></div>
+    <button type="reset" id="reset">Reset</button>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="../controller/players.js"></script>
+    <script type="text/javascript" src="../controller/playing.js"></script>
+    <script type="text/javascript" src="../controller/main.js"></script>
+  </body>
+</html>
