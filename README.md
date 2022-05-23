@@ -6,3 +6,5 @@
 - axios
 - json-server **for registration and dashboard**
 - web server extension for chrome
+
+![alt text](https://raw.githubusercontent.com/JooZef315/Toot-and-Otto-Board-Game/master/img.JPG)
