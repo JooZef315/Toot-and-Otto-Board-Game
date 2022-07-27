@@ -73,6 +73,7 @@ document.getElementById("reset").addEventListener("click", () => {
   WinnerDeclaration();
   GameOver = false;
   let div = document.getElementsByClassName("winner")[0];
+  div.style.display = "none";
   div.style.backgroundColor = "white";
   ActiveLetter = 0;
   ActivePlayer = initPlayers.starter;

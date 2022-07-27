@@ -37,6 +37,7 @@ var UpdatePlayerboard = (player) => {
 var WinnerDeclaration = (winner) => {
   let div = document.getElementsByClassName("winner")[0];
   if (winner) {
+    div.style.display = "block";
     div.innerText = `the winner is: ${ActivePlayer.name}!!!!!`;
     div.style.color = ActivePlayer.color;
     div.style.backgroundColor = "steelblue";
