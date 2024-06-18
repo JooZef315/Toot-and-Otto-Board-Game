@@ -39,7 +39,17 @@ HeaderCells.map((h, index) => {
     h.classList.add("active-header");
     h.innerText = Letters[ActiveLetter];
   });
+  h.addEventListener("touchstart", () => {
+    h.style.backgroundColor = ActivePlayer.color;
+    h.classList.add("active-header");
+    h.innerText = Letters[ActiveLetter];
+  });
   h.addEventListener("mouseout", () => {
+    h.classList.remove("active-header");
+    h.style.backgroundColor = "initial";
+    h.innerText = "";
+  });
+  h.addEventListener("touchend", () => {
     h.classList.remove("active-header");
     h.style.backgroundColor = "initial";
     h.innerText = "";
