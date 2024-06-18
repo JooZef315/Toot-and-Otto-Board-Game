@@ -44,6 +44,7 @@ HeaderCells.map((h, index) => {
     h.classList.add("active-header");
     h.innerText = Letters[ActiveLetter];
   });
+
   h.addEventListener("mouseout", () => {
     h.classList.remove("active-header");
     h.style.backgroundColor = "initial";
@@ -54,6 +55,7 @@ HeaderCells.map((h, index) => {
     h.style.backgroundColor = "initial";
     h.innerText = "";
   });
+
   h.addEventListener("wheel", () => {
     ActiveLetter = Letters.length - 1 - ActiveLetter;
     h.innerText = Letters[ActiveLetter];
@@ -62,6 +64,7 @@ HeaderCells.map((h, index) => {
     ActiveLetter = Letters.length - 1 - ActiveLetter;
     h.innerText = Letters[ActiveLetter];
   });
+
   h.addEventListener("click", () => {
     ActiveCol = index;
     if (GameOver) {
