@@ -48,6 +48,10 @@ HeaderCells.map((h, index) => {
     ActiveLetter = Letters.length - 1 - ActiveLetter;
     h.innerText = Letters[ActiveLetter];
   });
+  h.addEventListener("touchmove", () => {
+    ActiveLetter = Letters.length - 1 - ActiveLetter;
+    h.innerText = Letters[ActiveLetter];
+  });
   h.addEventListener("click", () => {
     ActiveCol = index;
     if (GameOver) {
@@ -91,6 +95,4 @@ document.getElementById("reset").addEventListener("click", () => {
   for (let i = 0; i < 4; i++) {
     document.getElementsByTagName("span")[i].innerText = 6;
   }
-  // console.log(TOOTName + " " + OTTOName);
-  // console.log(ActivePlayer);
 });
